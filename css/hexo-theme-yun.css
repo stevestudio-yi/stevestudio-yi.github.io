@@ -1945,6 +1945,25 @@ td {
 #say #say-from {
   display: block;
 }
+.notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 1px solid #000;
+  max-width: calc(900px - 2rem);
+  background-color: rgba(255,255,255,0.3);
+}
+@media screen and (max-width: 768px) {
+  .notice {
+    border-left-width: 0px;
+    border-right-width: 0px;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: 'dark';
@@ -1964,7 +1983,7 @@ td {
     color: var(--hty-text-color);
   }
   :root:not([data-user-color-scheme]) body::before {
-    background-image: url("/images/dark.jpg");
+    background-image: url("https://s1.ax1x.com/2020/06/26/NDveVe.jpg");
   }
   :root:not([data-user-color-scheme]) a {
     color: #3ca1ff;
@@ -2044,7 +2063,7 @@ td {
   color: var(--hty-text-color);
 }
 [data-user-color-scheme='dark'] body::before {
-  background-image: url("/images/dark.jpg");
+  background-image: url("https://s1.ax1x.com/2020/06/26/NDveVe.jpg");
 }
 [data-user-color-scheme='dark'] a {
   color: #3ca1ff;
